@@ -22,44 +22,35 @@ function findChrome() {
 }
 
 const WORLD_BRIEFS = [
-  { id: 14, color: '#1E3A8A', city: 'Lviv', text: 'Overnight strike on rail station kills two', src: 'BBC' },
-  { id: 15, color: '#1E3A8A', city: 'Kharkiv', text: 'Drone strike hits hospital, injuring four', src: 'Ukrinform' },
+  { id: 14, color: '#1E3A8A', city: 'Lviv', text: 'Overnight rail station strike kills 2', src: 'BBC' },
+  { id: 15, color: '#1E3A8A', city: 'Kharkiv', text: 'Drone strike hits city hospital, injuring 4', src: 'Ukrinform' },
   { id: 16, color: '#1E3A8A', city: 'Smolensk', text: 'Ukraine drones hit Dorogobuzh chemical plant', src: 'ISW' },
-  { id: 17, color: '#1E3A8A', city: 'Estonia', text: 'Approves 6-mo Russia road border shut Dec 1', src: 'Reuters' },
-  { id: 18, color: '#1E3A8A', city: 'Berlin', text: 'Youth in 25+ states walk out over draft', src: 'Guardian' },
-  { id: 19, color: '#1E3A8A', city: 'London', text: 'Cyber chief confirms ops vs Russia & China', src: 'Sky' },
-  { id: 20, color: '#1E3A8A', city: 'Paris', text: 'Strict consumer-credit rules cover BNPL loans', src: 'France 24' },
-  { id: 21, color: '#1E3A8A', city: 'Barcelona', text: 'Daraxonrasib combo hits 60.7% cancer response', src: 'ENA' },
-  { id: 22, color: '#1E3A8A', city: 'Turin', text: 'ATP pay tops $350m; Alcaraz into semis', src: 'ATP' },
-  { id: 23, color: '#7C3AED', city: 'Washington', text: 'Judge blocks Trump 250-ft Arlington arch', src: 'PBS' },
-  { id: 24, color: '#7C3AED', city: 'Washington', text: 'Order tells firms alert WH on Hill queries', src: 'WH' },
-  { id: 25, color: '#7C3AED', city: 'Florida', text: 'Historic downpours flood coast; rescues run', src: 'CBS' },
+  { id: 17, color: '#1E3A8A', city: 'Estonia', text: 'Shutting all Russia road borders Dec 1', src: 'Reuters' },
+  { id: 18, color: '#1E3A8A', city: 'Germany', text: 'Youth stage anti-conscription walkouts', src: 'Guardian' },
+  { id: 19, color: '#1E3A8A', city: 'Barcelona', text: 'Daraxonrasib hits 60.7% cancer response', src: 'ENA' },
+  { id: 20, color: '#1E3A8A', city: 'Turin', text: 'ATP pay tops $350m; Alcaraz reaches semis', src: 'ATP' },
+  { id: 21, color: '#7C3AED', city: 'Washington', text: 'Judge blocks Trump 250-ft Arlington arch', src: 'PBS' },
+  { id: 22, color: '#7C3AED', city: 'Florida', text: 'Historic coastal downpours flood homes', src: 'CBS' },
 
-  { id: 26, color: '#334155', city: 'Markets', text: 'Bitcoin dips under $60k; gold falls to $3,526', src: 'Reuters' },
-  { id: 27, color: '#334155', city: 'Geneva', text: 'WFP cuts 2027 reach to 91M amid $12B gap', src: 'UN' },
-  { id: 28, color: '#B91C1C', city: 'Tokyo', text: 'SoftBank tumbles 14.5% as chip rout widens', src: 'CNBC' },
-  { id: 29, color: '#B91C1C', city: 'Beijing', text: 'PBOC holds loan prime rates for 18th month', src: 'Xinhua' },
-  { id: 30, color: '#B91C1C', city: 'Seoul', text: 'Ruling party moves to impeach top judge', src: 'Dong-A' },
-  { id: 31, color: '#B91C1C', city: 'Seoul', text: 'High Court upholds Kakao founder acquittal', src: 'Times' },
-  { id: 32, color: '#B91C1C', city: 'Taipei', text: 'F-16s scramble vs Tu-95s; 2.7k bots flagged', src: 'CNA' },
-  { id: 33, color: '#B91C1C', city: 'Shenzhen', text: 'Xi hails Australia thaw; 3 nations urge truce', src: 'AA' },
-  { id: 34, color: '#B91C1C', city: 'New Delhi', text: 'Pakistan minister visits India for SCO talks', src: 'PTI' },
-  { id: 35, color: '#B91C1C', city: 'Naypyidaw', text: 'Myanmar junta calls World Court ruling unfair', src: 'CNN' },
-  { id: 36, color: '#B91C1C', city: 'Dhaka', text: '124 held amid fresh political arson attacks', src: 'Star' },
-  { id: 37, color: '#B91C1C', city: 'Hong Kong', text: 'Hang Seng drops 20% off peak; Tech adds CATL', src: 'AP' },
+  { id: 23, color: '#334155', city: 'Markets', text: 'Bitcoin <$60k; gold drops 2.6% to $3,526', src: 'Reuters' },
+  { id: 24, color: '#B91C1C', city: 'Tokyo', text: 'SoftBank sinks 14.5%; Kospi trips curb', src: 'CNBC' },
+  { id: 25, color: '#B91C1C', city: 'Beijing', text: 'PBOC holds loan prime rates 18th month', src: 'Xinhua' },
+  { id: 26, color: '#B91C1C', city: 'Seoul', text: 'Ruling DPK moves to impeach top judge', src: 'Dong-A' },
+  { id: 27, color: '#B91C1C', city: 'Taipei', text: 'F-16s scramble vs Russian Tu-95 bombers', src: 'CNA' },
+  { id: 28, color: '#B91C1C', city: 'Shenzhen', text: 'Xi hails full turnaround in Australia ties', src: 'AA' },
+  { id: 29, color: '#B91C1C', city: 'New Delhi', text: 'Pakistani minister visits India for SCO', src: 'PTI' },
+  { id: 30, color: '#B91C1C', city: 'Naypyidaw', text: 'Myanmar junta rejects World Court verdict', src: 'CNN' },
+  { id: 31, color: '#B91C1C', city: 'Dhaka', text: '124 arrested amid fresh arson attacks', src: 'Star' },
 
-  { id: 38, color: '#B45309', city: 'Iraq', text: 'Army enters Kataib Hezbollah base Jurf al-Sakhar', src: 'Reuters' },
-  { id: 39, color: '#B45309', city: 'Yemen', text: 'Coalition warns civilians to quit Hodeida port', src: 'Al Arabiya' },
-  { id: 40, color: '#B45309', city: 'Gaza', text: 'Strikes kill 6+ despite truce; Lebanon hit', src: 'Anadolu' },
-  { id: 41, color: '#15803D', city: 'S. Africa', text: 'Q3 police toll logs 581 women killed in 3 mo', src: 'SABC' },
-  { id: 42, color: '#15803D', city: 'Malawi', text: 'Forex crunch triggers multi-day fuel queues', src: 'Al Jazeera' },
-  { id: 43, color: '#15803D', city: 'Uganda', text: 'Bans rallies across 34 districts over Ebola', src: 'Nile Post' },
-  { id: 44, color: '#15803D', city: 'Nigeria', text: 'Court rejects bid to bar Tinubu in 2027 poll', src: 'Punch' },
-  { id: 45, color: '#7C3AED', city: 'Brazil', text: 'CB sells $1B; Lula signs Kapot Nhinore pact', src: 'AP' },
-  { id: 46, color: '#7C3AED', city: 'El Salvador', text: 'Bukele registers 3rd-term bid ahead of vote', src: 'AP' },
-  { id: 47, color: '#7C3AED', city: 'Argentina', text: 'Country risk jumps 15% to 1,070 bps', src: 'JPM' },
-  { id: 48, color: '#0F766E', city: 'Australia', text: 'Adelaide tests digital arrival at airport', src: 'ABF' },
-  { id: 49, color: '#0F766E', city: 'Tonga', text: 'Declares 27-day El Nino drought emergency', src: 'PMN' },
+  { id: 32, color: '#B45309', city: 'Iraq', text: 'Federal army enters Jurf al-Sakhar base', src: 'Reuters' },
+  { id: 33, color: '#B45309', city: 'Yemen', text: 'Coalition warns civilians to leave Hodeida', src: 'Al Arabiya' },
+  { id: 34, color: '#15803D', city: 'S. Africa', text: 'Q3 police toll logs 581 women killed', src: 'SABC' },
+  { id: 35, color: '#15803D', city: 'Malawi', text: 'Forex crunch triggers long fuel queues', src: 'Al Jazeera' },
+  { id: 36, color: '#15803D', city: 'Uganda', text: 'Ebola alert bans rallies in 34 districts', src: 'Nile Post' },
+  { id: 37, color: '#7C3AED', city: 'Brazil', text: 'CB sells $1B; Lula signs Kapot Nhinore', src: 'AP' },
+  { id: 38, color: '#7C3AED', city: 'El Salvador', text: 'Bukele registers 3rd-term presidential bid', src: 'AP' },
+  { id: 39, color: '#7C3AED', city: 'Argentina', text: 'Country risk spikes 15% to 1,070 bps', src: 'JPM' },
+  { id: 40, color: '#0F766E', city: 'Tonga', text: 'Declares 27-day drought state emergency', src: 'PMN' },
 ];
 
 function buildBriefColumn(items) {
@@ -75,9 +66,9 @@ function buildBriefColumn(items) {
 }
 
 function buildHtml() {
-  const col1 = buildBriefColumn(WORLD_BRIEFS.slice(0, 12));
-  const col2 = buildBriefColumn(WORLD_BRIEFS.slice(12, 24));
-  const col3 = buildBriefColumn(WORLD_BRIEFS.slice(24, 36));
+  const col1 = buildBriefColumn(WORLD_BRIEFS.slice(0, 9));
+  const col2 = buildBriefColumn(WORLD_BRIEFS.slice(9, 18));
+  const col3 = buildBriefColumn(WORLD_BRIEFS.slice(18, 27));
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -108,32 +99,32 @@ function buildHtml() {
     display: flex;
     justify-content: space-between;
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 9.5px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.9px;
     text-transform: uppercase;
   }
   .mast-top .left { color: #991B1B; }
-  .mast-top .right { color: #334155; }
+  .mast-top .right { color: #0F172A; }
   .mast-title-wrap {
-    border-top: 2px solid #0F172A;
-    border-bottom: 1px solid #0F172A;
+    border-top: 2.5px solid #020617;
+    border-bottom: 1.5px solid #020617;
     padding: 1.5px 0 2.5px 0;
     text-align: center;
   }
   .mast-title-wrap h1 {
     font-family: 'Georgia', serif;
-    font-size: 41px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.01;
     letter-spacing: -0.5px;
-    color: #090D16;
+    color: #020617;
   }
   .mast-deck {
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    font-size: 11px;
-    color: #1E293B;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 11.4px;
+    color: #0F172A;
     margin-top: 1px;
   }
 
@@ -141,7 +132,7 @@ function buildHtml() {
   .stats-row {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    border-bottom: 1.5px solid #0F172A;
+    border-bottom: 1.5px solid #020617;
     padding-bottom: 2.5px;
   }
   .stat-cell {
@@ -152,16 +143,18 @@ function buildHtml() {
   .stat-cell:last-child { border-right: none; padding-right: 0; }
   .stat-val {
     font-family: 'Georgia', serif;
-    font-size: 15.5px;
+    font-size: 16.5px;
     font-weight: 700;
-    color: #0F172A;
+    color: #020617;
     line-height: 1.06;
   }
   .stat-lbl {
-    font-size: 9.1px;
-    line-height: 1.14;
-    color: #334155;
-    font-weight: 500;
+    font-size: 9.4px;
+    line-height: 1.15;
+    color: #020617;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
   }
 
   .regions-bar {
@@ -170,7 +163,7 @@ function buildHtml() {
     align-items: center;
     background: #EAE2D2;
     border-radius: 3px;
-    padding: 2px 8px;
+    padding: 2.5px 8px;
     margin-bottom: 1px;
   }
   .reg-pills {
@@ -181,7 +174,7 @@ function buildHtml() {
   .reg-pill {
     color: #FFFFFF;
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 9.2px;
+    font-size: 9.8px;
     font-weight: 700;
     padding: 1.5px 7px;
     border-radius: 2px;
@@ -190,9 +183,9 @@ function buildHtml() {
   }
   .reg-note {
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 9.2px;
+    font-size: 9.8px;
     font-weight: 700;
-    color: #334155;
+    color: #0F172A;
     letter-spacing: 0.5px;
   }
 
@@ -201,19 +194,19 @@ function buildHtml() {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-    height: 192px;
+    height: 186px;
   }
   .lead-card {
-    background: #FFFDF8;
-    border: 1px solid #C8BFA8;
-    border-top: 3px solid var(--c, #1E3A8A);
+    background: #FFFFFF;
+    border: 1px solid #BDB39B;
+    border-top: 3.5px solid var(--c, #1E3A8A);
     border-radius: 3px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
   }
   .lead-art {
-    height: 86px;
+    height: 88px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -223,7 +216,7 @@ function buildHtml() {
     padding: 4.5px 8px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 2.5px;
     flex: 1;
   }
   .kicker {
@@ -231,9 +224,9 @@ function buildHtml() {
     align-items: center;
     gap: 5px;
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 9.2px;
+    font-size: 9.6px;
     font-weight: 700;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.4px;
     text-transform: uppercase;
     color: var(--c, #1E3A8A);
   }
@@ -241,40 +234,41 @@ function buildHtml() {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: var(--c, #1E3A8A);
     color: #FFFFFF;
-    font-size: 9px;
+    font-size: 9.4px;
     font-weight: 700;
     flex-shrink: 0;
   }
   .lead-body h2 {
     font-family: 'Georgia', serif;
-    font-size: 14.6px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 1.12;
-    color: #090D16;
+    line-height: 1.1;
+    color: #020617;
   }
   .lead-body p {
-    font-size: 10.1px;
+    font-size: 10.6px;
     line-height: 1.22;
-    color: #1E293B;
+    color: #0F172A;
+    font-weight: 500;
   }
-  .src { color: #475569; font-style: italic; font-weight: 500; }
+  .src { color: #334155; font-style: italic; font-weight: 600; }
 
   /* ROWS 2 & 3: FEATURE CARDS (5 COLS) */
   .row-feat {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 7px;
-    height: 129px;
+    height: 128px;
   }
   .feat-card {
-    background: #FFFDF8;
-    border: 1px solid #C8BFA8;
-    border-top: 2.5px solid var(--c, #1E3A8A);
+    background: #FFFFFF;
+    border: 1px solid #BDB39B;
+    border-top: 3px solid var(--c, #1E3A8A);
     border-radius: 3px;
     overflow: hidden;
     display: flex;
@@ -288,34 +282,36 @@ function buildHtml() {
     flex-shrink: 0;
   }
   .feat-body {
-    padding: 3.5px 6px;
+    padding: 3.5px 6.5px;
     display: flex;
     flex-direction: column;
-    gap: 1.5px;
+    gap: 2px;
     flex: 1;
   }
-  .feat-body .kicker { font-size: 8.5px; gap: 4px; }
-  .feat-body .num-dot { width: 13px; height: 13px; font-size: 8.3px; }
+  .feat-body .kicker { font-size: 9px; gap: 4px; }
+  .feat-body .num-dot { width: 14px; height: 14px; font-size: 8.8px; }
   .feat-body h3 {
-    font-family: 'Georgia', serif;
-    font-size: 11.8px;
+    font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+    font-size: 13.4px;
     font-weight: 700;
-    line-height: 1.11;
-    color: #090D16;
+    line-height: 1.07;
+    color: #020617;
+    letter-spacing: -0.1px;
   }
   .feat-body p {
-    font-size: 9.2px;
-    line-height: 1.17;
-    color: #1E293B;
+    font-size: 10.1px;
+    line-height: 1.16;
+    color: #0F172A;
+    font-weight: 500;
   }
 
   /* BOTTOM SECTION: MAP + TIMELINE & 3-COL WIRE */
   .bottom-sec {
     display: grid;
-    grid-template-columns: 244px 1fr;
+    grid-template-columns: 222px 1fr;
     gap: 10px;
-    height: 356px;
-    border-top: 1.5px solid #0F172A;
+    height: 372px;
+    border-top: 2px solid #020617;
     padding-top: 4px;
   }
   .left-col {
@@ -325,35 +321,36 @@ function buildHtml() {
   }
   .sec-hdr {
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 10px;
+    font-size: 10.6px;
     font-weight: 700;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.65px;
     text-transform: uppercase;
-    color: #0F172A;
-    border-bottom: 1px solid #CBD5E1;
+    color: #020617;
+    border-bottom: 1.5px solid #94A3B8;
     padding-bottom: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .sec-hdr span.sub { font-size: 8.8px; color: #64748B; font-weight: 600; }
+  .sec-hdr span.sub { font-size: 9.4px; color: #334155; font-weight: 700; }
   .map-wrap {
-    height: 126px;
-    background: #DCE8F2;
-    border: 1px solid #B8C7D6;
+    height: 118px;
+    background: #CFE2F1;
+    border: 1px solid #94A3B8;
     border-radius: 3px;
     overflow: hidden;
   }
   .map-cap {
-    font-size: 8.8px;
-    color: #475569;
+    font-size: 9.2px;
+    color: #1E293B;
+    font-weight: 600;
     margin-top: -2px;
   }
 
   /* UTC TIMELINE */
   .utc-box {
-    background: #FFFDF8;
-    border: 1px solid #C8BFA8;
+    background: #FFFFFF;
+    border: 1px solid #BDB39B;
     border-radius: 3px;
     padding: 5px 7px;
     flex: 1;
@@ -363,97 +360,102 @@ function buildHtml() {
   }
   .utc-title {
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 9.5px;
+    font-size: 10.2px;
     font-weight: 700;
     color: #991B1B;
-    letter-spacing: 0.6px;
-    border-bottom: 1px solid #E2D9C8;
+    letter-spacing: 0.5px;
+    border-bottom: 1.5px solid #E2D9C8;
     padding-bottom: 2px;
   }
   .utc-row {
     display: flex;
-    gap: 6px;
+    gap: 5px;
     align-items: baseline;
-    font-size: 9.5px;
-    line-height: 1.22;
-    color: #1E293B;
+    font-size: 10.1px;
+    line-height: 1.18;
+    color: #020617;
+    font-weight: 600;
   }
   .utc-t {
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
     font-weight: 700;
-    color: #0F172A;
-    background: #EAE2D2;
+    color: #020617;
+    background: #E2D8C4;
     padding: 0.5px 4px;
     border-radius: 2px;
-    font-size: 8.8px;
+    font-size: 9.4px;
     flex-shrink: 0;
   }
 
-  /* RIGHT: 3-COL WIRE (36 ITEMS) */
+  /* RIGHT: 3-COL WIRE (27 ITEMS) */
   .wire-wrap {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 4px;
   }
   .wire-cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 9px;
     flex: 1;
   }
   .wire-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid #E2D9C8;
-    padding-right: 7px;
+    border-right: 1px solid #D5CCB8;
+    padding-right: 8px;
   }
   .wire-col:last-child { border-right: none; padding-right: 0; }
   .brief-item {
     display: flex;
     align-items: flex-start;
-    gap: 4.5px;
-    border-bottom: 1px solid #ECE5D5;
-    padding-bottom: 1.5px;
+    gap: 5px;
+    border-bottom: 1px solid #E2D9C8;
+    padding-bottom: 2.5px;
   }
   .brief-item:last-child { border-bottom: none; padding-bottom: 0; }
   .brief-num {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 15px;
-    height: 13.5px;
+    width: 18px;
+    height: 16px;
     border-radius: 2px;
     color: #FFFFFF;
     font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
-    font-size: 8.4px;
+    font-size: 9.8px;
     font-weight: 700;
     flex-shrink: 0;
     margin-top: 1px;
   }
   .brief-txt {
-    font-size: 9.35px;
-    line-height: 1.17;
-    color: #0F172A;
+    font-size: 10.9px;
+    line-height: 1.18;
+    color: #020617;
+    font-weight: 600;
   }
+  .brief-txt strong { font-weight: 700; color: #020617; }
 
   /* DATE CHECK + FOOTER */
   .date-check {
-    background: #FBF7EE;
-    border: 1px solid #C8BFA8;
-    border-left: 3.5px solid #B91C1C;
+    background: #FFFFFF;
+    border: 1px solid #BDB39B;
+    border-left: 4px solid #B91C1C;
     border-radius: 2px;
     padding: 3.5px 8px;
-    font-size: 8.9px;
-    line-height: 1.24;
-    color: #1E293B;
+    font-size: 9.6px;
+    line-height: 1.22;
+    color: #0F172A;
+    font-weight: 600;
   }
   .date-check strong { color: #991B1B; letter-spacing: 0.4px; }
   .foot-line {
     display: flex;
     justify-content: space-between;
-    font-size: 8.4px;
-    color: #475569;
+    font-size: 9.1px;
+    color: #1E293B;
+    font-weight: 600;
   }
   svg { display: block; width: 100%; height: 100%; }
 </style>
@@ -465,35 +467,35 @@ function buildHtml() {
   <header>
     <div class="mast-top">
       <span class="left">THE WORLD IN ONE DAY</span>
-      <span class="right">49 VERIFIED STORIES &middot; 7 REGIONS &middot; EVERY ONE FRIDAY 20 NOV 2026</span>
+      <span class="right">40 VERIFIED STORIES &middot; 7 REGIONS &middot; EVERY ONE FRIDAY 20 NOV 2026</span>
     </div>
     <div class="mast-title-wrap">
       <h1>Friday 20 November 2026</h1>
-      <div class="mast-deck">Russian missiles hit Kyiv &amp; enter Poland &middot; AI rout sinks Wall St &amp; Asia &middot; Cyclone Akvan strikes Odisha &middot; COP31 runs overtime</div>
+      <div class="mast-deck">Kyiv &amp; Poland missile strikes &middot; Global AI sell-off &middot; Cyclone Akvan hits Odisha &middot; COP31 runs overtime</div>
     </div>
   </header>
 
   <!-- DAY IN NUMBERS & REGION COUNTS -->
   <section>
     <div class="stats-row">
-      <div class="stat-cell"><div class="stat-val">111+</div><div class="stat-lbl">missiles fired at Ukraine overnight</div></div>
-      <div class="stat-cell"><div class="stat-val">372k</div><div class="stat-lbl">sheltered in Odisha ahead of Akvan</div></div>
-      <div class="stat-cell"><div class="stat-val">-5.3%</div><div class="stat-lbl">Nasdaq plunge, wiping 2026 gains</div></div>
-      <div class="stat-cell"><div class="stat-val">100k</div><div class="stat-lbl">youth visas/yr in UK-EU reset deal</div></div>
-      <div class="stat-cell"><div class="stat-val">2.3%</div><div class="stat-lbl">Japan Oct CPI; Dec BoJ hike eyed</div></div>
-      <div class="stat-cell"><div class="stat-val">118</div><div class="stat-lbl">Glenn Phillips historic runs vs India</div></div>
+      <div class="stat-cell"><div class="stat-val">111+</div><div class="stat-lbl">Ukraine missiles</div></div>
+      <div class="stat-cell"><div class="stat-val">372k</div><div class="stat-lbl">Odisha sheltered</div></div>
+      <div class="stat-cell"><div class="stat-val">-5.3%</div><div class="stat-lbl">Nasdaq plunge</div></div>
+      <div class="stat-cell"><div class="stat-val">100k</div><div class="stat-lbl">UK&ndash;EU visas/yr</div></div>
+      <div class="stat-cell"><div class="stat-val">2.3%</div><div class="stat-lbl">Japan Oct CPI</div></div>
+      <div class="stat-cell"><div class="stat-val">118</div><div class="stat-lbl">Phillips record</div></div>
     </div>
     <div class="regions-bar">
       <div class="reg-pills">
-        <span class="reg-pill" style="background:#1E3A8A;">Europe 13</span>
-        <span class="reg-pill" style="background:#B91C1C;">Asia 12</span>
-        <span class="reg-pill" style="background:#7C3AED;">Americas 8</span>
-        <span class="reg-pill" style="background:#15803D;">Africa 5</span>
-        <span class="reg-pill" style="background:#B45309;">Mideast 5</span>
-        <span class="reg-pill" style="background:#0F766E;">Oceania 3</span>
-        <span class="reg-pill" style="background:#334155;">Global 3</span>
+        <span class="reg-pill" style="background:#1E3A8A;">Europe 11</span>
+        <span class="reg-pill" style="background:#B91C1C;">Asia 10</span>
+        <span class="reg-pill" style="background:#7C3AED;">Americas 7</span>
+        <span class="reg-pill" style="background:#15803D;">Africa 4</span>
+        <span class="reg-pill" style="background:#B45309;">Mideast 4</span>
+        <span class="reg-pill" style="background:#0F766E;">Oceania 2</span>
+        <span class="reg-pill" style="background:#334155;">Global 2</span>
       </div>
-      <span class="reg-note">49 ATOMIC STORIES &middot; ALL FRI 20 NOV 2026</span>
+      <span class="reg-note">40 ATOMIC STORIES &middot; ALL FRI 20 NOV 2026</span>
     </div>
   </section>
 
@@ -518,7 +520,7 @@ function buildHtml() {
       <div class="lead-body">
         <div class="kicker"><span class="num-dot">1</span> KYIV, UKRAINE &middot; WAR</div>
         <h2>Russian barrage hits 3 Kyiv bridges, killing 9</h2>
-        <p>Overnight strike fires 111 missiles &amp; 404 drones, cutting power and water; Austrian &amp; Dutch embassies damaged. <span class="src">(Kyiv Indep., Reuters)</span></p>
+        <p>111 missiles &amp; 404 drones cut power and water; 2 embassies damaged. <span class="src">(Kyiv Indep.)</span></p>
       </div>
     </article>
 
@@ -528,20 +530,20 @@ function buildHtml() {
           <rect width="326" height="92" fill="#0F172A"/>
           <line x1="0" y1="30" x2="326" y2="30" stroke="#1E293B"/>
           <line x1="0" y1="60" x2="326" y2="60" stroke="#1E293B"/>
-          <polyline points="14,34 52,38 88,48 124,52 158,68 188,78" fill="none" stroke="#FB7185" stroke-width="3"/>
-          <polygon points="14,34 52,38 88,48 124,52 158,68 188,78 188,92 14,92" fill="#E11D48" opacity="0.22"/>
-          <rect x="7" y="6" width="144" height="17" rx="2" fill="#B91C1C"/><text x="79" y="18" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">GLOBAL AI MARKET ROUT</text>
-          <rect x="196" y="7" width="122" height="78" rx="3" fill="#1E293B" stroke="#475569"/>
-          <text x="204" y="23" fill="#E2E8F0" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">S&amp;P 500</text><text x="311" y="23" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">-3.7%</text>
-          <text x="204" y="40" fill="#E2E8F0" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">NASDAQ</text><text x="311" y="40" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">-5.3%</text>
-          <text x="204" y="57" fill="#E2E8F0" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">TAIWAN</text><text x="311" y="57" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">-6.2%</text>
-          <text x="204" y="74" fill="#E2E8F0" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">NIKKEI</text><text x="311" y="74" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">-5.1%</text>
+          <polyline points="14,34 52,38 88,48 124,52 158,68 188,78" fill="none" stroke="#FB7185" stroke-width="3.5"/>
+          <polygon points="14,34 52,38 88,48 124,52 158,68 188,78 188,92 14,92" fill="#E11D48" opacity="0.25"/>
+          <rect x="7" y="6" width="154" height="19" rx="2" fill="#DC2626"/><text x="84" y="19" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="11.5" font-weight="700">GLOBAL AI ROUT -5.3%</text>
+          <rect x="196" y="7" width="122" height="78" rx="3" fill="#1E293B" stroke="#64748B"/>
+          <text x="204" y="23" fill="#F8FAFC" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">S&amp;P 500</text><text x="311" y="23" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">-3.7%</text>
+          <text x="204" y="40" fill="#F8FAFC" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">NASDAQ</text><text x="311" y="40" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">-5.3%</text>
+          <text x="204" y="57" fill="#F8FAFC" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">TAIWAN</text><text x="311" y="57" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">-6.2%</text>
+          <text x="204" y="74" fill="#F8FAFC" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">NIKKEI</text><text x="311" y="74" text-anchor="end" fill="#FCA5A5" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">-5.1%</text>
         </svg>
       </div>
       <div class="lead-body">
         <div class="kicker"><span class="num-dot">2</span> WALL ST &amp; ASIA &middot; MARKETS</div>
         <h2>AI sell-off sinks Wall St &amp; Asian stocks</h2>
-        <p>S&amp;P 500 drops 3.7% into correction; Nasdaq (-5.3%) erases 2026 gains; Taiwan &amp; Nikkei log worst week since 2020. <span class="src">(Reuters, AP)</span></p>
+        <p>S&amp;P 500 enters correction; Nasdaq erases 2026 gains in brutal rout. <span class="src">(Reuters, AP)</span></p>
       </div>
     </article>
 
@@ -550,24 +552,24 @@ function buildHtml() {
         <svg viewBox="0 0 326 92" xmlns="http://www.w3.org/2000/svg">
           <rect width="326" height="92" fill="#0B2E36"/>
           <path d="M0,0 L152,0 L142,24 L118,52 L96,92 L0,92 Z" fill="#1B3B2F" stroke="#34D399" stroke-width="1.4"/>
-          <text x="48" y="48" text-anchor="middle" fill="#A7F3D0" font-family="Bahnschrift, sans-serif" font-size="11" font-weight="700">ODISHA</text>
-          <text x="38" y="76" text-anchor="middle" fill="#A7F3D0" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">GOPALPUR</text>
+          <text x="48" y="48" text-anchor="middle" fill="#A7F3D0" font-family="Bahnschrift, sans-serif" font-size="11.5" font-weight="700">ODISHA</text>
+          <text x="38" y="76" text-anchor="middle" fill="#A7F3D0" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">GOPALPUR</text>
           <g transform="translate(144,48)">
             <circle cx="0" cy="0" r="28" fill="#14B8A6" opacity="0.22"/>
-            <path d="M0,0 C12,-18 34,-10 26,10 C18,28 -14,28 -22,6 C-28,-12 -10,-30 12,-24" fill="none" stroke="#5EEAD4" stroke-width="2.6" stroke-linecap="round"/>
-            <circle cx="0" cy="0" r="4" fill="#FEF08A"/>
+            <path d="M0,0 C12,-18 34,-10 26,10 C18,28 -14,28 -22,6 C-28,-12 -10,-30 12,-24" fill="none" stroke="#5EEAD4" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="4.5" fill="#FEF08A"/>
           </g>
           <path d="M220,70 L160,52" stroke="#F87171" stroke-width="2" stroke-dasharray="3,2"/>
-          <rect x="7" y="6" width="122" height="17" rx="2" fill="#0F766E"/><text x="68" y="18" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="10.5" font-weight="700">CYCLONE AKVAN</text>
-          <rect x="192" y="8" width="126" height="32" rx="3" fill="rgba(15,23,42,0.88)" stroke="#2DD4BF"/>
-          <text x="255" y="21" text-anchor="middle" fill="#99F6E4" font-family="Bahnschrift, sans-serif" font-size="9.5" font-weight="700">LANDFALL ~8 AM IST</text>
-          <text x="255" y="34" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">372,000 EVACUATED</text>
+          <rect x="7" y="6" width="128" height="19" rx="2" fill="#0F766E"/><text x="71" y="19" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="11.5" font-weight="700">CYCLONE AKVAN</text>
+          <rect x="188" y="7" width="130" height="35" rx="3" fill="rgba(15,23,42,0.9)" stroke="#2DD4BF"/>
+          <text x="253" y="21" text-anchor="middle" fill="#99F6E4" font-family="Bahnschrift, sans-serif" font-size="10" font-weight="700">LANDFALL ~8 AM IST</text>
+          <text x="253" y="36" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="11" font-weight="700">372,000 SHELTERED</text>
         </svg>
       </div>
       <div class="lead-body">
         <div class="kicker"><span class="num-dot">3</span> ODISHA, INDIA &middot; CYCLONE</div>
         <h2>Cyclone Akvan strikes India's east coast</h2>
-        <p>Storm makes landfall near Gopalpur with 70–90 km/h gusts &amp; 209 mm rain; 372,000 sheltered, zero deaths reported. <span class="src">(IMD, PTI)</span></p>
+        <p>Gopalpur landfall brings 209 mm rain; 372,000 sheltered, zero dead. <span class="src">(IMD, PTI)</span></p>
       </div>
     </article>
   </section>
@@ -585,8 +587,8 @@ function buildHtml() {
           <circle cx="72" cy="34" r="9" fill="none" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="2,2"/>
           <circle cx="72" cy="34" r="3" fill="#DC2626"/>
           <path d="M168,26 L75,34" stroke="#B91C1C" stroke-width="2"/>
-          <rect x="92" y="34" width="92" height="12" rx="2" fill="rgba(153,27,27,0.92)"/>
-          <text x="138" y="42.5" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="7.8" font-weight="700">2 KH-101 + DRONE</text>
+          <rect x="82" y="31" width="104" height="15" rx="2" fill="rgba(153,27,27,0.95)"/>
+          <text x="134" y="41.5" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="9" font-weight="700">2 KH-101 + DRONE</text>
         </svg>
       </div>
       <div class="feat-body">
@@ -642,7 +644,7 @@ function buildHtml() {
           <rect x="0" y="34" width="192" height="16" fill="#0369A1"/>
           <path d="M44,34 L138,34 L148,24 L118,24 L114,16 L98,16 L96,24 L40,24 Z" fill="#475569"/>
           <circle cx="62" cy="20" r="9" fill="#F97316"/><circle cx="62" cy="20" r="4.5" fill="#FEF08A"/>
-          <rect x="122" y="6" width="62" height="14" rx="2" fill="#B91C1C"/><text x="153" y="16" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="8.5" font-weight="700">HORMUZ HIT</text>
+          <rect x="114" y="5" width="72" height="16" rx="2" fill="#B91C1C"/><text x="150" y="16" text-anchor="middle" fill="#FFF" font-family="Bahnschrift, sans-serif" font-size="9.5" font-weight="700">HORMUZ HIT</text>
         </svg>
       </div>
       <div class="feat-body">
@@ -801,54 +803,54 @@ function buildHtml() {
           <line x1="126" y1="24" x2="112" y2="12" stroke="#1E3A8A" stroke-width="0.8"/>
           <line x1="138" y1="26" x2="152" y2="12" stroke="#1E3A8A" stroke-width="0.8"/>
           <!-- Pins 1-13 with zero overlaps -->
-          <g font-family="Bahnschrift, sans-serif" font-size="7.5" font-weight="700" text-anchor="middle" fill="#FFF">
+          <g font-family="Bahnschrift, sans-serif" font-size="8.5" font-weight="700" text-anchor="middle" fill="#FFF">
             <!-- 10 US -->
-            <circle cx="39" cy="39" r="6" fill="#7C3AED"/><text x="39" y="41.5">10</text>
+            <circle cx="38" cy="39" r="7" fill="#7C3AED"/><text x="38" y="42">10</text>
             <!-- 2 Wall St / Global -->
-            <circle cx="60" cy="35" r="6" fill="#334155"/><text x="60" y="37.5">2</text>
+            <circle cx="60" cy="35" r="7" fill="#334155"/><text x="60" y="38">2</text>
             <!-- 12 Peru -->
-            <circle cx="58" cy="76" r="6" fill="#7C3AED"/><text x="58" y="78.5">12</text>
+            <circle cx="58" cy="76" r="7" fill="#7C3AED"/><text x="58" y="79">12</text>
             <!-- 6 Brussels -->
-            <circle cx="108" cy="24" r="6" fill="#1E3A8A"/><text x="108" y="26.5">6</text>
+            <circle cx="108" cy="24" r="7" fill="#1E3A8A"/><text x="108" y="27">6</text>
             <!-- 8 Italy -->
-            <circle cx="118" cy="37" r="6" fill="#1E3A8A"/><text x="118" y="39.5">8</text>
+            <circle cx="118" cy="37" r="7" fill="#1E3A8A"/><text x="118" y="40">8</text>
             <!-- 4 Poland -->
-            <circle cx="126" cy="14" r="6" fill="#1E3A8A"/><text x="126" y="16.5">4</text>
+            <circle cx="126" cy="14" r="7" fill="#1E3A8A"/><text x="126" y="17">4</text>
             <!-- 1 Kyiv -->
-            <circle cx="144" cy="24" r="6" fill="#1E3A8A"/><text x="144" y="26.5">1</text>
+            <circle cx="144" cy="24" r="7" fill="#1E3A8A"/><text x="144" y="27">1</text>
             <!-- 5 COP31 -->
-            <circle cx="136" cy="40" r="6" fill="#B45309"/><text x="136" y="42.5">5</text>
+            <circle cx="136" cy="40" r="7" fill="#B45309"/><text x="136" y="43">5</text>
             <!-- 7 Hormuz -->
-            <circle cx="156" cy="50" r="6" fill="#B45309"/><text x="156" y="52.5">7</text>
+            <circle cx="156" cy="50" r="7" fill="#B45309"/><text x="156" y="53">7</text>
             <!-- 11 Kenya -->
-            <circle cx="140" cy="72" r="6" fill="#15803D"/><text x="140" y="74.5">11</text>
+            <circle cx="140" cy="72" r="7" fill="#15803D"/><text x="140" y="75">11</text>
             <!-- 3 India -->
-            <circle cx="176" cy="56" r="6" fill="#B91C1C"/><text x="176" y="58.5">3</text>
+            <circle cx="176" cy="56" r="7" fill="#B91C1C"/><text x="176" y="59">3</text>
             <!-- 9 Tokyo -->
-            <circle cx="216" cy="36" r="6" fill="#B91C1C"/><text x="216" y="38.5">9</text>
+            <circle cx="216" cy="36" r="7" fill="#B91C1C"/><text x="216" y="39">9</text>
             <!-- 13 NZ -->
-            <circle cx="231" cy="100" r="6" fill="#0F766E"/><text x="231" y="102.5">13</text>
+            <circle cx="231" cy="100" r="7" fill="#0F766E"/><text x="231" y="103">13</text>
           </g>
         </svg>
       </div>
-      <div class="map-cap">Pins 1&ndash;13 link directly to lead &amp; feature stories above.</div>
+      <div class="map-cap">Pins 1&ndash;13 map directly to cards above.</div>
 
       <div class="utc-box">
         <div class="utc-title">FRIDAY 20 NOV IN UTC</div>
-        <div class="utc-row"><span class="utc-t">00:00</span><span>Kyiv Dnipro bridges hit in barrage</span></div>
-        <div class="utc-row"><span class="utc-t">02:30</span><span>Cyclone Akvan lands near Gopalpur</span></div>
-        <div class="utc-row"><span class="utc-t">05:30</span><span>Taiwan -6.2%; Kospi curb triggered</span></div>
-        <div class="utc-row"><span class="utc-t">05:50</span><span>Russian missiles fall in SE Poland</span></div>
-        <div class="utc-row"><span class="utc-t">11:30</span><span>UK &amp; EU seal post-Brexit reset deal</span></div>
-        <div class="utc-row"><span class="utc-t">15:00</span><span>COP31 in Antalya runs past close</span></div>
-        <div class="utc-row"><span class="utc-t">19:10</span><span>Nvidia -14% on SEC probe; S&amp;P -3.7%</span></div>
+        <div class="utc-row"><span class="utc-t">00:00</span><span>Kyiv bridges hit in barrage</span></div>
+        <div class="utc-row"><span class="utc-t">02:30</span><span>Cyclone Akvan hits Odisha</span></div>
+        <div class="utc-row"><span class="utc-t">05:30</span><span>Taiwan -6.2%; Kospi curbed</span></div>
+        <div class="utc-row"><span class="utc-t">05:50</span><span>Russian missiles in Poland</span></div>
+        <div class="utc-row"><span class="utc-t">11:30</span><span>UK&ndash;EU reset deal sealed</span></div>
+        <div class="utc-row"><span class="utc-t">15:00</span><span>COP31 runs past close</span></div>
+        <div class="utc-row"><span class="utc-t">19:10</span><span>Nvidia -14%; S&amp;P -3.7%</span></div>
       </div>
     </div>
 
     <div class="wire-wrap">
       <div class="sec-hdr">
-        <span>ALSO ON FRIDAY 20 NOVEMBER &mdash; 36 MORE STORIES (14&ndash;49)</span>
-        <span class="sub">WORLD WIRE &middot; ALL CONTINENTS</span>
+        <span>ALSO ON FRIDAY 20 NOVEMBER &mdash; 27 MORE STORIES (14&ndash;40)</span>
+        <span class="sub">WORLD WIRE &middot; ALL 7 REGIONS</span>
       </div>
       <div class="wire-cols">
         <div class="wire-col">${col1}</div>
@@ -861,7 +863,7 @@ function buildHtml() {
 
   <!-- DATE CHECK + FOOTER -->
   <div class="date-check">
-    <strong>DATE CHECK</strong> Excluded as Thu 19 Nov news: ICJ Myanmar genocide ruling, Anthropic IPO day-one surge, US Senate 51&ndash;48 Iran vote, Denmark&ndash;Greenland pact, Haiti Martissant raid, WTO fishery deal. Excluded as Sat 21 Nov+ (not yet finalized Fri 20 Nov): final COP31 closing agreement, BepiColombo CET orbit confirmation.
+    <strong>DATE CHECK</strong> Excluded as Thu 19 Nov: ICJ Myanmar ruling, Anthropic IPO debut, US Senate 51&ndash;48 Iran vote, Denmark&ndash;Greenland pact, Haiti Martissant raid. Excluded as Sat 21 Nov+: final COP31 text.
   </div>
   <footer class="foot-line">
     <span>Every story happened or was first reported on Friday 20 Nov 2026 (any timezone) &middot; Claims attributed.</span>
