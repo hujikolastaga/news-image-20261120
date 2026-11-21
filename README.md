@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261120/hujikolastaga/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 [![reward](https://make.fun/badge/news-image-20261120/hujikolastaga/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
-An illustrated 1024x1024 editorial world-news front page summing up Friday, 20 November 2026 across six regions and six beats: Ukraine & Poland missile escalation, COP31 Antalya final-day deadlock, the global AI/tech stock plunge following Anthropic's $81.3B Nasdaq IPO, the Shenzhen trilateral summit, the UK-EU Brexit reset deal, Cyclone Akvan's landfall on India's east coast, Red Sea evacuation warnings & UN hunger outlook, and SpaceX CRS-35 undocking alongside Brazil's currency defense.
+An illustrated 1024x1024 Swiss-editorial world-news broadsheet summarizing **49 verified stories across 7 regions** from Friday, 20 November 2026: Kyiv Dnipro bridge & Poland missile strikes, the global AI & Wall St/Asia tech sell-off (Nvidia SEC probe), Cyclone Akvan's landfall in Odisha, COP31 Antalya final-day deadlock, the UK-EU post-Brexit reset deal, Oman Strait of Hormuz tanker strikes, Italy's general strike, Japan inflation at 2.3%, Kenya's Turkana first oil well, Peru's M6.8 quake, Glenn Phillips' 118 record, and 36 global wire dispatches plus a synchronized UTC timeline and world location map.
 
 ## Run it
 
